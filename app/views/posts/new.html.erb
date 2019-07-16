@@ -1,0 +1,17 @@
+<%= form_for :post, url: posts_path do |f| %>
+
+  <%= f.label :kind %><br>
+  <%= f.text_field :kind %><br>
+   
+  <%= f.label :name %><br>
+  <%= f.text_field :name %><br>
+  
+  <%= f.label :price %><br>
+  <%= f.text_field :price %><br>
+  
+
+  <%= f.submit %>
+<% end %>
+
+
+<%= link_to 'Back', posts_path %>
